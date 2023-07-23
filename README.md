@@ -1,2 +1,2 @@
 # muzzihut
-Music Player Website
+Project on HTML, CSS, JavaScript <br>
