@@ -4,11 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins&family=Raleway&family=Roboto&family=Space+Grotesk&display=swap" rel="stylesheet">
     <title>MuzziHut</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
+    <div class="heading">
+        <h3 class="header">
+            <a href="#">MuzziHut</a>
+        </h3>
+    </div>
+
+    <audio src="" id="audio"></audio>
+
+    <div class="container">
+
+        <div class="music-list">
+
+            <div class="song-container">
+
+                <div class="song-item">
+                    <img src="img/Aaj Phir.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Aaj Phir</span>
+                    <span class="m-name">Hate Story 2</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Ae Dil Hai Mushkil.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Ae Dil Hai Mushkil</span>
+                    <span class="m-name">Ae Dil Hai Mushkil</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Gerua.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Gerua</span>
+                    <span class="m-name">Dilwale</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Hamari Adhuri Kahani.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Hamari Adhuri Kahani</span>
+                    <span class="m-name">Hamari Adhuri Kahani</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Hamdard.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Hamdard</span>
+                    <span class="m-name">Ek Villain</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Hawayein.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Hawayein</span>
+                    <span class="m-name">Jab Harry Met Sejal</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Kabhi Jo Baadal Barse.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Kabhi Jo Baadal Barse</span>
+                    <span class="m-name">Jackpot</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Khairiyat.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Khairiyat</span>
+                    <span class="m-name">Chhichhore</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Muskurane.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Muskurane</span>
+                    <span class="m-name">Citylights</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Sawan Aaya Hai.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Sawan Aaya Hai</span>
+                    <span class="m-name">Creature 3D</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Suno Na Sangemarmar.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Suno Na Sangemarmar</span>
+                    <span class="m-name">Youngistaan</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Thodi Jagah.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Thodi Jagah</span>
+                    <span class="m-name">Marjaavaan</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+                <div class="song-item">
+                    <img src="img/Tum Hi Ho.jpg" alt="error">
+                    <span class="s-name"><i class='bx bx-music' ></i>Tum Hi Ho</span>
+                    <span class="m-name">Aashiqui 2</span>
+                    <button class="play-menu">Play</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="music-player">
+
+            <div class="music-details">
+                <h1 class="music-name">Aaj Phir</h1>
+                <p class="movie-name">Hate Story 2</p>
+            </div>
+            <div class="disk"></div>
+            <div class="song-slider">
+                <input type="range" value="0" class="seek-bar">
+                <span class="current-time">00:00</span>
+                <span class="song-duration">00:00</span>
+            </div>
+
+            <div class="controls">
+                <button class="btn backward-btn"><img src=img/pre.png alt=""></button>
+                <button class="play-btn pause">
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="btn forward-btn"><img src=img/nxt.png alt=""></button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Shreyasi | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
+
