@@ -14,23 +14,6 @@ const forwardBtn = document.querySelector('.forward-btn');
 
 var pbtns = document.querySelectorAll('.play-menu');
 
-for (let i = 0; i < pbtns.length; i++) {
-    pbtns[i].addEventListener('click', () => {
-        setMusic(i);
-        playMusic();
-    });
-}
-
-playBtn.addEventListener('click', () => {
-    if (playBtn.className.includes('pause')) {
-        music.play();
-    } else {
-        music.pause();
-    }
-    playBtn.classList.toggle('pause');
-    disk.classList.toggle('play');
-})
-
 const setMusic = (i) => {
     seekBar.value = 0;
     let song = songs[i];
@@ -98,5 +81,23 @@ backwardBtn.addEventListener('click', () => {
     }
     setMusic(currentMusic);
     playMusic();
+})
+
+
+for (let i = 0; i < pbtns.length; i++) {
+    pbtns[i].addEventListener('click', () => {
+        setMusic(i);
+        playMusic();
+    });
+}
+
+playBtn.addEventListener('click', () => {
+    if (playBtn.className.includes('pause')) {
+        music.play();
+    } else {
+        music.pause();
+    }
+    playBtn.classList.toggle('pause');
+    disk.classList.toggle('play');
 })
 
